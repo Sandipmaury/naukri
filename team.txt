@@ -1,0 +1,8 @@
+Project - Make a clone of naukri.com web app.
+All team members are :-
+1.Sandip Maurya
+2.Pritesh Jha
+3.Shubham Kumar Jaishwal
+4.Abhay Kumar
+5.Nilam Khose
+6.Sufiyaan Sheikh
