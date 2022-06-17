@@ -1,0 +1,158 @@
+/* navbar styling */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eeeeee;
+}
+#navbar {
+  height: 70px;
+  background-color: white;
+}
+#navbar > div {
+  height: 70px;
+  width: 1036px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#manubar {
+  width: 550px;
+  height: 70px;
+  display: flex;
+}
+
+.drop-down {
+  width: auto;
+  height: 5px;
+  visibility: hidden;
+}
+
+.sub-menu {
+  top: 70px;
+  left: 0px;
+  position: absolute;
+  background-color: #f5f5f5;
+  font-size: 0px;
+}
+.sub-menu1 {
+  top: 70px;
+  right: 0px;
+  position: absolute;
+}
+.hover-on-manubar:hover > .sub-menu1 {
+  width: auto;
+  height: auto;
+  line-height: 25px;
+  padding: 20px 20px 30px 0px;
+  visibility: visible;
+  transition: 0.3s;
+  color: rgb(128, 128, 128);
+  font-size: 14px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.hover-on-manubar:hover > .sub-menu {
+  width: auto;
+  height: auto;
+  line-height: 25px;
+  padding: 20px 20px 30px 0px;
+  visibility: visible;
+  transition: 0.3s;
+  color: rgb(128, 128, 128);
+  font-size: 14px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.list-style > ul {
+  margin-left: 30px;
+  list-style: none;
+  width: 150px;
+}
+
+.drop-down > ul > li:hover {
+  color: #4a90e2;
+}
+.heading {
+  color: black;
+  margin: 10px 0px;
+  cursor: default;
+}
+.drop-down > ul > .heading:hover {
+  color: black;
+}
+
+#manubar > div {
+  width: 92px;
+}
+
+#manubar > div,
+#my_naukri > div {
+  height: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#bell_Icon {
+  width: 3%;
+  height: 70px;
+  cursor: pointer;
+  position: relative;
+}
+#bell_Icon > img {
+  width: 80%;
+}
+.notification {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  position: relative;
+  top: 13px;
+  left: 7px;
+  color: white;
+  border-radius: 50%;
+}
+#my_naukri {
+  width: 10%;
+  margin-left: -6%;
+}
+
+.hover-on-manubar:hover {
+  background-color: #f5f5f5;
+}
+.text-decoration-none {
+  text-decoration: none;
+  color: rgb(101, 101, 101);
+  border-bottom: 5px solid transparent;
+}
+
+.hover-on-manubar:hover > a,
+#my_naukri > a {
+  font-weight: 700;
+  color: #5c97e3;
+  background-color: #f5f5f5;
+  border-bottom: 5px solid #5c97e3;
+}
