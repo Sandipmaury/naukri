@@ -904,3 +904,16 @@ footer {
 .last>img{
     width: 90%;
 }
+
+
+.login>a{
+    color: rgb(38, 87, 247);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.reg>a{
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    text-decoration: none;
+}

@@ -551,3 +551,12 @@ a+p{
     width: 1500px;
   }
 }
+
+
+
+#OK{
+  font-weight: 700;
+  color: #5c97e3;
+  background-color: #f5f5f5;
+  border-bottom: 5px solid #5c97e3;
+}

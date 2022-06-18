@@ -329,3 +329,15 @@ body {
    margin-top: 10px;
    color:gray;
 }
+#OK{
+    font-weight: 700;
+    color: #5c97e3;
+    background-color: #f5f5f5;
+    border-bottom: 5px solid #5c97e3;
+  }
+
+
+  #mainwidth{
+    width: 1200px;
+    margin: auto;
+  }
