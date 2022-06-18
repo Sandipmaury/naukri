@@ -19,47 +19,168 @@ a {
     justify-content: space-evenly;
 }
 
-header {
-    height: 10vh;
-    line-height: 10vh;
-    padding: 0 20px;
-    background-color: #fff;
+/* navbar styling */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+#navbar {
+  height: 70px;
+  background-color: white;
+}
+#navbar > div {
+  height: 70px;
+  width: 1036px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-header img {
-    margin: 20px 0;
+#manubar {
+  width: 550px;
+  height: 70px;
+  display: flex;
 }
 
-header ul {
-    display: inline-block;
+.drop-down {
+  width: auto;
+  height: 5px;
+  visibility: hidden;
 }
 
-header ul li {
-    display: inline-block;
-    text-transform: uppercase;
+.sub-menu {
+  top: 70px;
+  left: 0px;
+  position: absolute;
+  background-color: #f5f5f5;
+  font-size: 0px;
+}
+.sub-menu1 {
+  top: 70px;
+  right: 0px;
+  position: absolute;
+}
+.hover-on-manubar:hover > .sub-menu1 {
+  width: auto;
+  height: auto;
+  line-height: 25px;
+  padding: 20px 20px 30px 0px;
+  visibility: visible;
+  transition: 0.3s;
+  color: rgb(128, 128, 128);
+  font-size: 14px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
 }
 
-header ul li a {
-    color: #000;
-    margin: 0 10px;
-    transition: 0.5s;
+.hover-on-manubar:hover > .sub-menu {
+  width: auto;
+  height: auto;
+  line-height: 25px;
+  padding: 20px 20px 30px 0px;
+  visibility: visible;
+  transition: 0.3s;
+  color: rgb(128, 128, 128);
+  font-size: 14px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
 }
 
-header ul li a:hover {
-    background-color: rgb(238, 236, 236);
-    padding: 22px 15px;
+.list-style > ul {
+  margin-left: 30px;
+  list-style: none;
+  width: 150px;
+}
+
+.drop-down > ul > li:hover {
+  color: #4a90e2;
+}
+.heading {
+  color: black;
+  margin: 10px 0px;
+  cursor: default;
+}
+.drop-down > ul > .heading:hover {
+  color: black;
+}
+
+#manubar > div {
+  width: 92px;
+}
+
+#manubar > div,
+#my_naukri > div {
+  height: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#bell_Icon {
+  width: 3%;
+  height: 70px;
+  cursor: pointer;
+  position: relative;
+}
+#bell_Icon > img {
+  width: 80%;
+}
+.notification {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  position: relative;
+  top: 13px;
+  left: 7px;
+  color: white;
+  border-radius: 50%;
+}
+#my_naukri {
+  width: 10%;
+  margin-left: -6%;
+}
+
+.hover-on-manubar:hover {
+  background-color: #f5f5f5;
+}
+.text-decoration-none {
+  text-decoration: none;
+  color: rgb(101, 101, 101);
+  border-bottom: 5px solid transparent;
+}
+
+.hover-on-manubar:hover > a,
+#my_naukri > a {
+  font-weight: 700;
+  color: #5c97e3;
+  background-color: #f5f5f5;
+  border-bottom: 5px solid #5c97e3;
+  transition: 0.5s;
 }
 
 /* Body Part */
 /* Sub Navbar */
-.subNavbar {
+#subMenuList {
+    width: 50%;
     height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -260px;
+}
+.subNavbar {
     line-height: 10vh;
     padding: 0 20px;
     background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCRMM5SNpPPevtL47IzhLdkN2ezXsmSg9_yZx3n_D3MG0U0m6K31UMTTcWjJQIdRMtz-s&usqp=CAU");
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .subNavbar ul {
@@ -72,12 +193,7 @@ header ul li a:hover {
 
 .subNavbar ul li a {
     color: #fff;
-    margin: 0 40px;
     font-size: 13px;
-}
-
-.subNavbar #subMenuList {
-    width: 80%;
 }
 
 /* slide */
@@ -86,41 +202,50 @@ header ul li a:hover {
     line-height: 10vh;
     padding: 0 20px;
     background: url("https://wallpaperaccess.com/full/1385494.jpg");
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    padding-top: 40px;
 
 }
+#insideSlide{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+form{
+    width: 100%;
 
+}
 #mainDiv {
-    width: 60%;
+    width: 72%;
     margin-left: 30px;
 }
 
-#skill {
+form>#skill {
     font-size: 15px;
     outline: none;
-    width: 62vh;
+    width: 55%;
     padding: 15px 10px;
     border: none;
     box-shadow: inset 0 0 0 3px rgb(143, 142, 142);
 }
 
-#place {
+form>#place {
     font-size: 15px;
     outline: none;
-    width: 34vh;
+    width: 30%;
     padding: 15px 10px;
     margin-left: -5px;
     border: none;
     box-shadow: inset 0 0 0 3px rgb(143, 142, 142);
 }
 
-#btn {
+form>#btn {
     font-size: 15px;
-    outline: none;
-    width: 15vh;
-    padding: 13px 25px 13px 25px;
+    width: 15%;
+    padding: 13px 20px;
     font-size: 18px;
     background-color: #0099cc;
     color: #fff;
@@ -130,16 +255,12 @@ header ul li a:hover {
 }
 
 .forForm {
-    border: 1px solid transparent;
-    margin-left: 10px;
+    width: 100%;
+    padding: 0;
 
 }
 
-.mp {
-    margin-top: -10px;
-}
-
-.forForm>p {
+.forForm>form+p {
     color: #fff;
     float: right;
     margin-top: -30px;
@@ -150,24 +271,17 @@ header ul li a:hover {
 }
 
 .mt {
-    width: 55%;
-    margin: auto;
-    margin-top: 100px;
-    margin-left: 10px;
+    margin-top: 30px;
 
 }
-
-.mt>p {
-    display: block;
-    float: left;
-    margin-top: -60px;
-}
+.mt>p{
+    color: #fff;
+    font-size: 13px;
+} 
 
 #subMenu {
-    width: 105vh;
-    height: 6vh;
-    margin: auto;
-    margin-top: -14px;
+    width: 95%;
+    margin-top: -20px; 
     background-color: #151815;
 
 }
@@ -178,11 +292,8 @@ header ul li a:hover {
     align-items: center;
     height: 6vh;
     width: 100%;
+    list-style: none;
 
-}
-
-#subMenu>ul>li {
-    margin-top: -47px;
 }
 
 #subMenu>ul>li>a {
@@ -194,17 +305,15 @@ header ul li a:hover {
     height: 6vh;
     display: flex;
     align-items: center;
-    padding: 20px;
-    margin-left: -17px;
+    padding: 10px 15px;
+    margin-left: -13px;
     background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgxVRJZjCciMQycUJmlbCg9Nfvud6T60IUgqtwdKW6ddGHqdBOCKulns0mm1v5v-RVy3s&usqp=CAU");
 }
 
 #box {
-    width: 38vh;
+    width: 23%;
     height: 25vh;
     background-color: #f8f9fb;
-    margin-top: -13px;
-    margin-left: -60px;
     padding: 10px;
 }
 
@@ -214,12 +323,15 @@ header ul li a:hover {
 
 #insideBox>div:first-child>p:first-child {
     margin-top: -10px;
+    font-size: 15px;
+    width: 100%;
 }
 
 #insideBox>div:first-child>p+p {
     font-size: 12px;
-    margin-top: -45px;
+    margin-top: -50px;
 }
+
 
 #updatePart {
     line-height: 20px;
@@ -232,20 +344,14 @@ ul.a {
     list-style-type: square;
 
 }
-
-#subMenu>ul>li {
-    list-style: none;
-
-}
-
 #updatePart>ul>li>a {
     color: #0099cc;
 }
 
 /* Browser Jobs by Locations */
 .container {
-    width: 80%;
-    margin: 10px 20px auto 150px;
+    width: 75%;
+    margin: 10px 20px auto 183px;
     background-color: #fff;
 }
 
@@ -268,7 +374,7 @@ hr {
 
 .container>div>div:nth-child(2) {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     cursor: pointer;
@@ -293,14 +399,14 @@ hr {
 .container>div>div:nth-child(2)+a {
     color: #09c;
     float: right;
-    margin-right: 75px;
+    margin-right: 35px;
     font-size: 15px;
 }
 
 /* Browser Jobs by Locations & Browse Jobs by Industries */
 .subContainer {
-    width: 80%;
-    margin: 10px 20px auto 150px;
+    width: 75%;
+    margin: 10px 20px auto 183px;
     display: flex;
     justify-content: space-between;
 
@@ -357,7 +463,7 @@ hr {
 .subContainer>div>div:nth-child(2)+a {
     margin-top: 15px;
     float: right;
-    margin-right: 40px;
+    margin-right: 35px;
     margin-bottom: 18px;
     font-size: 15px;
     color: #09c;
@@ -371,12 +477,12 @@ hr {
     margin-right: 60px;
 }
 
-/* Browse Jobs by Companies */
+/* Browse Jobs by Industries */
 
 
 #companies {
-    width: 80%;
-    margin: 10px 20px auto 150px;
+    width: 75%;
+    margin: 10px 20px auto 183px;
     background-color: #fff;
     height: 220px;
 
@@ -437,7 +543,7 @@ hr {
 }
 
 #inside {
-    width: 80%;
+    width: 75%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
