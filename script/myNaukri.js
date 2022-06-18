@@ -21,3 +21,14 @@ close.addEventListener("click", () => {
   search_input.style.width = "80%";
   search_bar.style.position = "";
 });
+
+
+let profileArray=JSON.parse(localStorage.getItem("details"))
+console.log(profileArray)
+
+let Name=document.querySelector("#name")
+ Name.innerText=profileArray[0].name;
+
+let Email=document.querySelector("#Email")
+Email.innerText=profileArray[0].email;
+
