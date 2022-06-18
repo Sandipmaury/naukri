@@ -1,3 +1,7 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 
 
   body {
@@ -8,7 +12,7 @@
  #navwidth{
 width: 100%;
     height: 70px;
- 
+    padding: 10px 0px;
     background-color: white;
    
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
@@ -18,13 +22,16 @@ width: 100%;
      display: flex;
      width: 1200px;
     margin: auto;
+
+   justify-content: space-around;
+  align-items: center;
  } 
 
-  #navbar>div {
-       display: flex;  
-     justify-content: space-around;
-     align-items: center;
- } 
+ #navbar>div {
+    display: flex;  
+  justify-content: space-around;
+  align-items: center;
+} 
 
 
  #imgs>img {
@@ -32,7 +39,12 @@ width: 100%;
  }
 
  #types {
-     width: 80%;
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+   margin-left: 40px;
+    
  }
 
  #types>div {
@@ -87,10 +99,9 @@ width: 100%;
  }
 
  .container {
-     margin: auto;
-     width: 600px;
+   
+    width: 500px;
  }
-
  .ul-reset {
      padding-left: 0;
      margin-top: 0;
@@ -136,10 +147,12 @@ width: 100%;
  .mega-menu {
      background: white;
      display: none;
-     left: 15%;
+   
      position: absolute;
      text-align: left;
      width: 70%;
+
+     padding: 20px;
  }
 
  .mega-menu h3 {
@@ -171,8 +184,8 @@ width: 100%;
  }
 
  .droppable {
-     position: static;
- }
+    position: static;
+}
 
  .droppable>a {
      font-family: sans-serif;
@@ -286,12 +299,13 @@ select {
     border: .5px dashed #d3e1ea;
     background-color: #fefaf6;
     height: 150px;
-    width: 60%;
+    width: 70%;
     margin: auto;
     margin-top: 30px;
     display: flex;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    padding: 20px;
 }
 
 #headline {
@@ -378,14 +392,14 @@ select {
 #slidebox1st>div {
     margin: auto;
     width: 18%;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(58, 114, 147, 0.2) 0px 7px 8px 0px;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     cursor: pointer;
 }
 
 #slidebox1st>div:hover {
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+     box-shadow: rgba(1, 162, 255, 0.2) 0px 7px 2px 0px;
 }
 
 #box>h3 {
@@ -456,10 +470,13 @@ b {
 }
 
 #cards {
-    width: 23%;
+    border-radius: 10px 0px;
+    width: 22%;
     height: 150px;
     margin: auto;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 0px 10px;
+   
 }
 
 #cards:hover {
@@ -916,4 +933,10 @@ footer {
     color: rgb(255, 255, 255);
     font-weight: bolder;
     text-decoration: none;
+}
+
+#WWW{
+
+margin: auto;
+    width: 1200px;
 }
