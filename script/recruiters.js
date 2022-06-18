@@ -33,3 +33,149 @@ function slider() {
     slide.append(image1, image2, image3, image4, image5);
   }, 2000);
 }
+
+function followBtn1()
+{
+  let btn= document.querySelector("#btn1");
+  btn.style.backgroundColor= "#52BE80";
+}
+function followBtnOut1()
+{
+  let btn= document.querySelector("#btn1");
+  btn.style.backgroundColor= "white";
+}
+
+
+function followBtn2()
+{
+  let btn= document.querySelector("#btn2");
+  btn.style.backgroundColor= "#52BE80";
+}
+function followBtnOut2()
+{
+  let btn= document.querySelector("#btn2");
+  btn.style.backgroundColor= "white";
+}
+
+function followBtn3()
+{
+  let btn= document.querySelector("#btn3");
+  btn.style.backgroundColor= "#52BE80";
+}
+function followBtnOut3()
+{
+  let btn= document.querySelector("#btn3");
+  btn.style.backgroundColor= "white";
+}
+
+
+function followBtn4()
+{
+  let btn= document.querySelector("#btn4");
+  btn.style.backgroundColor= "#52BE80";
+}
+function followBtnOut4()
+{
+  let btn= document.querySelector("#btn4");
+  btn.style.backgroundColor= "white";
+}
+
+function followBtn5()
+{
+  let btn= document.querySelector("#btn5");
+  btn.style.backgroundColor= "#52BE80";
+}
+function followBtnOut5()
+{
+  let btn= document.querySelector("#btn5");
+  btn.style.backgroundColor= "white";
+}
+
+
+function followBtn6()
+{
+  let btn= document.querySelector("#btn6");
+  btn.style.backgroundColor= "#52BE80";
+}
+function followBtnOut6()
+{
+  let btn= document.querySelector("#btn6");
+  btn.style.backgroundColor= "white";
+}
+
+function followB1()
+{
+  let btn= document.querySelector("#b1");
+  btn.style.backgroundColor= "#52BE80";
+}
+function followBtnO1()
+{
+  let btn= document.querySelector("#b1");
+  btn.style.backgroundColor= "white";
+}
+
+function followB2()
+{
+  let btn= document.querySelector("#b2");
+  btn.style.backgroundColor= "#52BE80";
+}
+function followBtnO2()
+{
+  let btn= document.querySelector("#b2");
+  btn.style.backgroundColor= "white";
+}
+
+function followB3()
+{
+  let btn= document.querySelector("#b3");
+  btn.style.backgroundColor= "#52BE80";
+}
+function followBtnO3()
+{
+  let btn= document.querySelector("#b3");
+  btn.style.backgroundColor= "white";
+}
+
+function followB4()
+{
+  let btn= document.querySelector("#b4");
+  btn.style.backgroundColor= "#52BE80";
+}
+function followBtnO4()
+{
+  let btn= document.querySelector("#b4");
+  btn.style.backgroundColor= "white";
+}
+
+function followB5()
+{
+  let btn= document.querySelector("#b5");
+  btn.style.backgroundColor= "#52BE80";
+}
+function followBtnO5()
+{
+  let btn= document.querySelector("#b5");
+  btn.style.backgroundColor= "white";
+}
+
+function followB6()
+{
+  let btn= document.querySelector("#b6");
+  btn.style.backgroundColor= "#52BE80";
+}
+function followBtnO6()
+{
+  let btn= document.querySelector("#b6");
+  btn.style.backgroundColor= "white";
+}
+
+function followB7()
+{
+  let btn= document.querySelector("#b7");
+  btn.style.backgroundColor= "#52BE80";
+}
+function followBtnO7()
+{
+  let btn= document.querySelector("#b7");
+  btn.style.backgroundColor= "white";
+}
