@@ -27,15 +27,11 @@ function slidShow(num){
 let profileArray=JSON.parse(localStorage.getItem("details"))
 
 
-let Name=document.querySelector("#name")
- Name.innerText=profileArray[0].name;
 
-let Email=document.querySelector("#Email")
-Email.innerText=profileArray[0].email;
 
 let out=document.querySelector("#logOut")
 out.addEventListener("click",()=>{
- 
+  
   window.localStorage.removeItem('logdetails');
   
   window.location.href="index.html"

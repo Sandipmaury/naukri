@@ -179,3 +179,15 @@ function followBtnO7()
   let btn= document.querySelector("#b7");
   btn.style.backgroundColor= "white";
 }
+let profileArray=JSON.parse(localStorage.getItem("details"))
+
+
+
+
+let out=document.querySelector("#logOut")
+out.addEventListener("click",()=>{
+  
+  window.localStorage.removeItem('logdetails');
+  
+  window.location.href="index.html"
+})
