@@ -13,7 +13,7 @@ It all started when Sanjeev Bikhchandani quit his corporate job at Hindustan Mil
       1. Sandip Maurya (TL)
       2. Sufiyaan Shaik
       3. Nilam Khose
-      4. Shubbham Kuma
+      4. Shubbham Kumar Jaiswal
       5. Pritesh Jha
       6. Abhay Kumar
 ## Local Use 
