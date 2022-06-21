@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    
+#navbar {
+  display: flex;
+  top: 0px;
+  position: sticky;
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ 
+}#notify{
+    width:18px;
+    height:18px;
+    border-radius: 50%;
+    background-color: brown;
+   text-align: center;
+   color:white;
+   margin-top: -8px;
+}
+
+#logo {
+  width: 150px;
+  margin-top: 5px;
+}
+
+.menubar {
+  text-align: center;
+  width: 85%;
+  height: 45px;
+  display: flex;
+
+  background-color: white;
+  margin-bottom: -10px;
+}
+.menubar ul {
+  display: inline-flex;
+  list-style: none;
+  margin-top: 14px;
+}
+.menubar ul li {
+  direction: ltr;
+  margin: 10px;
+
+  font-size: 16px;
+}
+.menubar ul li a {
+  text-decoration: none;
+}
+.menubar > ul > li:hover {
+  font-weight: 600;
+  color: rgb(42, 145, 230);
+}
+#navbar > div:nth-child(2) > ul > li > a:hover {
+  border-bottom: 3px solid rgb(42, 145, 230);
+}
+.submenu1 {
+  display: none;
+}
+.menubar ul li:hover .submenu1 {
+  display: block;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  margin-top: 2px;
+}
+.submenu1 a {
+  color: rgba(0, 0, 0, 0.89);
+  font-weight: 100;
+}
+
+.submenu1 > ul {
+  text-align: left;
+  display: block;
+}
+.deepmenu > div {
+  display: inline-block;
+  margin-right: 6px;
+  color: black;
+  font-size: 14px;
+}
+
+.deepmenu a:hover,
+li > a:hover,
+.deepmenu2 a:hover,
+.deepmenu3 a:hover {
+  color: blue;
+}
+
+.fade {
+  color: rgb(102, 99, 99);
+  font-size: small;
+  font-weight: 100;
+  margin-top: 0px;
+}
+.menubar > a {
+  margin-top: -3px;
+}
+.deepmenu2 {
+  display: none;
+}
+.dd2:hover .deepmenu2 {
+  display: block;
+  position: absolute;
+  text-align: left;
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 100;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.deepmenu2 > div a {
+  color: black;
+  margin-left: 15px;
+}
+.deepmenu2 > div p {
+  margin-left: 15px;
+}
+.deepmenu3 {
+  display: none;
+}
+
+.dd3:hover .deepmenu3 {
+  display: block;
+  position: absolute;
+  text-align: left;
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 100;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.deepmenu3 > div a {
+  color: black;
+  margin-left: 15px;
+}
+.deepmenu3 > div p {
+  margin-left: 15px;
+}
+
+      #third {
+        width: 100%;
+        height: 300px;
+        color: white;
+
+        background-color: royalblue;
+        display: flex;
+        justify-content: center;
+      }
+      #third > div {
+        width: 45%;
+        margin-top: 35px;
+      }
+      #third img {
+        width: 60%;
+      }
+      #forth {
+        width: 85%;
+        height: 430px;
+        margin: auto;
+        margin-top: -130px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      .large {
+        font-size: 35px;
+        margin-top: 10px;
+      }
+      #forth > div {
+        width: 46%;
+        height: 400px;
+        padding: 15px;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 96%;
+        grid-template-rows: repeat(3, 100px);
+        gap: 20px;
+      }
+      #grid > div {
+        display: flex;
+      }
+      #choose {
+        width: 85%;
+        height: 160px;
+
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+      }
+      #forthc {
+        text-align: center;
+      }
+      button {
+        width: 220px;
+        height: 50px;
+        background-color: orangered;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-size: 20px;
+      }
+      .select {
+        width: 28%;
+        height: 150px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: 1px solid gray;
+        margin-top: 8px;
+      }
+      #recommended {
+        font-size: 13px;
+      }
+      #recommended:hover {
+        border: 3px solid cyan;
+      }
+      #radiobutton {
+        position: relative;
+      }
+      .cross {
+        text-decoration: line-through;
+      }
+      .select:hover {
+        border: 3px solid rgb(6, 235, 235);
+      }
+      h4,
+      h1,
+      h2 {
+        margin-bottom: -14px;
+      }
+    
+      .sub_menu_1 {
+        display: none;
+      }
+    
+    </style>
+  </head>
+  <body>
+    
+    <div id="navbar">
+      <div > <img  id="logo" src="https://static.naukimg.com/s/7/123/i/FF-Logo.8e75327b.png" alt="ERROR"></div>
+      <div class="menubar">
+        <ul>
+          <li class="active"><a href="#">MY SERVICES</a></li>
+          <li>
+            <a href="#"> RESUME WRITING</a>
+  
+            <div class="submenu1">
+              <ul>
+                <li>
+                  <a href="#">Text Resume</a>
+                  <p class="fade">Enhance your Resume To impress Recruiter</p>
+                  <div class="deepmenu">
+                    <div>
+                      <a href="#">Entry-Level</a>
+                      <p class="fade">(Exp 0to 3 years)</p>
+                    </div>
+                    <div>
+                      <a href="#">Mid-Level</a>
+                      <p class="fade">(Exp 3 to 5 years)</p>
+                    </div>
+                    <div>
+                      <a href="#">Senior-Level</a>
+                      <p class="fade">(Exp 5 to 15 years)</p>
+                    </div>
+  
+                    <div>
+                      <a href="#">Excutive-Level</a>
+                      <p class="fade">(Exp 15 years and above)</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">Visual Resume</a>
+                  <div class="deepmenu">
+                    <div>
+                      <a href="#">Entry-Level</a>
+                      <p class="fade">(Exp 0to 3 years)</p>
+                    </div>
+                    <div>
+                      <a href="#">Mid-Level</a>
+                      <p class="fade">(Exp 3 to 5 years)</p>
+                    </div>
+                    <div>
+                      <a href="#">Senior-Level</a>
+                      <p class="fade">(Exp 5 to 15 years)</p>
+                    </div>
+  
+                    <div>
+                      <a href="#">Excutive-Level</a>
+                      <p class="fade">(Exp 15 years and above)</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">Resume Builder</a>
+                  <p class="fade">
+                    Make a job winning resume with our simple resume builder
+                  </p>
+                </li>
+                <li>
+                  <a href="">Resume Critique</a>
+                  <p class="fade">Get a detailed analysis of your resume</p>
+                </li>
+                <li>
+                  <a href="">Resume Sample</a>
+                  <p class="fade">
+                    Know where your resume quality stand amongest others
+                  </p>
+                </li>
+                <li>
+                  <a href="">Job Letter Samples</a>
+                  <div class="deepmenu">
+                    <div>
+                      <a href="#">Entry-Level</a>
+                      <p class="fade">(Exp 0to 3 years)</p>
+                    </div>
+                    <div>
+                      <a href="#">Mid-Level</a>
+                      <p class="fade">(Exp 3 to 5 years)</p>
+                    </div>
+                    <div>
+                      <a href="#">Senior-Level</a>
+                      <p class="fade">(Exp 5 to 15 years)</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">Cover Letter Samples</a>
+                  <p class="fade">view cover letter samples</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="dd2"><a href="#"> RECRUITER ATTENTION</a>
+              <div class="deepmenu2">
+                  <div>
+                    <a href="#">Resume Display</a>
+                    <p class="fade">Gain more visibility among recruiters</p>
+                  </div>
+                  <div>
+                    <a href="#">Job Search Boosters</a>
+                    <p class="fade">Skip the line with job referals</p>
+                  </div>
+                  <div>
+                    <a href="#">Recruiter Connection</a>
+                    <p class="fade">Find and contact recruiters hiring in your domain</p>
+                  </div>
+                </div>
+          
+          </li>
+          <li class="dd3"><a  href="#"> FIND JOBS</a>
+          
+              <div class="deepmenu3">
+                  <div>
+                    <a href="#">Priority Applicant</a>
+                    <p class="fade">Increase your chance of getting a call</p>
+                  </div>
+                 
+                  <div>
+                    <a href="#">jobs on Mail and SMS</a>
+                    <p class="fade">Let us search the jobs for you across the web</p>
+                  </div>
+                </div>
+          
+          </li>
+          <li><a href="#">MONTHLY SUBSCRIPTION</a></li>
+          <li><a href="#"> VALUE PACK</a></li>
+          <li><a href="#"> CONTACT US</a></li>
+        </ul>
+      </div>
+          <div > 
+            <div><img src="https://static.naukimg.com/s/7/123/i/cart.de6f3dff.png" alt=""><p  id="notify">1</p> </div>
+               
+           
+          
+          
+         </div>
+</div>
+        <div id="avtar">
+          <img src="https://my.naukri.com/Photo/getProfileImage" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div id="third">
+      <div>
+        <p>Not getting enough profile views?</p>
+        <p class="large">
+          Get a Featured Profile & increase your visibility to recruiters up to
+          3 times
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://static.naukimg.com/s/7/123/i/rd-main-bg.4816c071.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div id="forth">
+      <div>
+        <p class="large">Key Features</p>
+        <div id="grid">
+          <div>
+            <div>
+              <img
+                src="https://static.naukimg.com/s/7/123/i/profileIcon.d9c247a2.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <h4>Highlight Your Profile</h4>
+              <p>
+                Your profile is marked as ”Featured” to make you stand out in
+                the Naukri Database as an active jobseeker.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://static.naukimg.com/s/7/123/i/rankHighIcon.97b8019a.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <h4>Rank Higher In Search Results</h4>
+              <p>
+                Your profile is given a higher rank when recruiters search CVs
+                of active candidates in Naukri database.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://static.naukimg.com/s/7/123/i/accessibleIcon.9d0e0b91.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <h4>Be Accessible To More Recruiters</h4>
+              <p>
+                Your resume is searchable even by recruiters not registered with
+                Naukri via "Free CV Search"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="forthc">
+        <p>Choose Subscription</p>
+        <div id="choose">
+          <fieldset id="recommended">
+            <legend>RECOMMENDED</legend>
+            <input type="radio" name="" id="" />
+            <div>1 Month</div>
+            <div><h1>₹ 573</h1></div>
+            <div>
+              <p class="cross">₹ 819</p>
+              <p>30% off</p>
+            </div>
+          </fieldset>
+
+          <div class="select">
+            <input type="radio" />
+            <div>3 Month</div>
+            <div><h2>₹ 1364</h2></div>
+            <div>
+              <p class="cross">₹ 1949</p>
+              <p>30% off</p>
+            </div>
+          </div>
+          <div class="select">
+            <input type="radio" name="" id="" />
+            <div>6 Month</div>
+            <div><h2>₹ 2017</h2></div>
+            <div>
+              <p class="cross">₹ 2881</p>
+              <p>30% off</p>
+            </div>
+          </div>
+        </div>
+        <h4>
+          1 Month Plan requires credit/debit card and auto renews until
+          cancelled
+        </h4>
+        <p>You can cancel anytime. Applicable tax may apply.</p>
+        <button>BUY NOW</button>
+        <h4>Flat 20% off on all services. Offer expiring soon</h4>
+      </div>
+    </div>
+  </body>
+</html>
