@@ -1,0 +1,480 @@
+* p {
+  margin-left: 10px;
+} 
+
+#navbar > div:last-child img {
+  margin-top: 22px;
+}
+#navbar {
+  display: flex;
+  top: 0px;
+  position: sticky;
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ 
+}
+
+#logo {
+  width: 150px;
+  margin-top: 10px;
+}
+
+.menubar {
+  text-align: center;
+  width: 85%;
+  height: 55px;
+  display: flex;
+
+  background-color: white;
+  margin-bottom: -10px;
+}
+.menubar ul {
+  display: inline-flex;
+  list-style: none;
+  margin-top: 14px;
+}
+.menubar ul li {
+  direction: ltr;
+  margin: 10px;
+
+  font-size: 16px;
+}
+.menubar ul li a {
+  text-decoration: none;
+}
+.menubar > ul > li:hover {
+  font-weight: 600;
+  color: rgb(42, 145, 230);
+}
+#navbar > div:nth-child(2) > ul > li > a:hover {
+  border-bottom: 3px solid rgb(42, 145, 230);
+}
+.submenu1 {
+  display: none;
+}
+.menubar ul li:hover .submenu1 {
+  display: block;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  margin-top: 2px;
+}
+.submenu1 a {
+  color: rgba(0, 0, 0, 0.89);
+  font-weight: 100;
+}
+
+.submenu1 > ul {
+  text-align: left;
+  display: block;
+}
+.deepmenu > div {
+  display: inline-block;
+  margin-right: 6px;
+  color: black;
+  font-size: 14px;
+}
+
+.deepmenu a:hover,
+li > a:hover,
+.deepmenu2 a:hover,
+.deepmenu3 a:hover {
+  color: blue;
+}
+
+.fade {
+  color: rgb(102, 99, 99);
+  font-size: small;
+  font-weight: 100;
+  margin-top: 0px;
+}
+.menubar > a {
+  margin-top: -3px;
+}
+.deepmenu2 {
+  display: none;
+}
+.dd2:hover .deepmenu2 {
+  display: block;
+  position: absolute;
+  text-align: left;
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 100;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.deepmenu2 > div a {
+  color: black;
+  margin-left: 15px;
+}
+.deepmenu2 > div p {
+  margin-left: 15px;
+}
+.deepmenu3 {
+  display: none;
+}
+
+.dd3:hover .deepmenu3 {
+  display: block;
+  position: absolute;
+  text-align: left;
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 100;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.deepmenu3 > div a {
+  color: black;
+  margin-left: 15px;
+}
+.deepmenu3 > div p {
+  margin-left: 15px;
+}
+#first {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: -30px;
+  background-color: rgb(235, 200, 6);
+}
+#first > p:last-child {
+  margin-top: -20px;
+}
+#second {
+  width: 100%;
+  height: 300px;
+  color: white;
+  text-align: center;
+  background-color: rgba(9, 9, 61, 0.877);
+}
+#second > p:first-child {
+  font-size: 30px;
+  margin-bottom: -15px;
+  padding: 7px;
+}
+#third {
+  width: 75%;
+  margin: auto;
+  margin-top: -150px;
+  display: flex;
+  justify-content: space-between;
+}
+#third > div,
+#sixth > div {
+  width: 30%;
+  height: 320px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+}
+#third > div:first-child img {
+  height: 120px;
+}
+#third > div:nth-child(2) img {
+  height: 120px;
+}
+.th {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.thd > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -30px;
+}
+.thd > div:last-child > p:first-child {
+  color: gray;
+  font-size: 15px;
+  margin-bottom: -15px;
+}
+#third > div img {
+  width: 100%;
+}
+#third > div:first-child:hover img{
+  background-color: rgb(116, 116, 218);
+}
+#third > div:nth-child(2):hover img {
+  background-color: rgb(233, 162, 207);
+}
+#third > div:last-child:hover img{
+  background-color: aquamarine;
+}
+#fourth {
+  width: 75%;
+  height: 250px;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#fourth > div:first-child {
+  width: 66%;
+  height: 250px;
+  display: flex;
+}
+#fourth > div:last-child  {
+  width: 32%;
+
+  height: 250px;
+}
+#fourth > div:last-child img {
+  margin: 15px 0 0 125px;
+ 
+}
+
+#fourth > div:first-child > div:first-child {
+  width: 55%;
+}
+#fourth > div:first-child img {
+  width: 85%;
+  height: 250px;
+}
+#fourth > div:first-child:hover img{
+  background-color: rgb(42, 145, 230);
+}
+ #fourth > div:last-child:hover img{
+    background-color: rgb(184, 228, 96);
+  }
+#fifth {
+  width: 75%;
+  height: 280px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  margin: auto;
+  margin-top: 15px;
+}
+#fifthc {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+}
+#fifth img {
+  width: 60%;
+}
+#fifth > div:first-child {
+  margin: 25px 0 0 31px;
+}
+#sixth {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+#sixth img {
+  width: 100%;
+  height: 120px;
+}
+#sixth > div:first-child:hover img{
+  background-color: rgb(105, 96, 165);
+}
+#sixth > div:nth-child(2):hover img {
+  background-color: aqua;
+}
+#sixth > div:last-child:hover img{
+  background-color: rgba(49, 172, 243, 0.897);
+}
+#seventh {
+  width: 75%;
+  height: 500px;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+#seventh > div:first-child {
+  width: 48%;
+  height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(42, 145, 230);
+  color: white;
+}
+#seventh > div:last-child {
+  width: 40%;
+  padding: 40px;
+  height: 420px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#seventh > div:first-child > div {
+  height: 300px;
+  line-height: 40px;
+  margin: 80px 0 0 80px;
+}
+#eighth {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-color: rgb(71, 69, 69);
+  margin-top: 15px;
+}
+#ninth {
+  width: 100%;
+  height: 60px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+#ninth > div:first-child {
+  direction: rtl;
+  line-height: 2px;
+}
+#ninth > div:last-child {
+  margin-top: 8px;
+  margin-left: 30px;
+}
+#tenth {
+  width: 100%;
+  height: 350px;
+ display: flex;
+ justify-content: space-evenly;
+  background-color: rgb(71, 69, 69);
+ 
+
+ 
+}
+#tenth > div {
+  width: 15%;
+  height: auto;
+  
+}#tenth>div>div{
+    margin-bottom: 10px;
+}
+ 
+ 
+  #tenth a:hover{
+    color: blue;
+    margin-bottom: 10px;
+}
+ #tenth >div div>a{
+    color:white;
+    margin-bottom: 10px;
+
+    text-decoration: none;
+}
+#eleventh > div {
+  width: 80%;
+ 
+  font-weight: 100;
+  margin: auto;
+  font-size: 12px;
+}
+#eleventh > div p {
+  margin-bottom: -6px;
+}
+#twelvth {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  
+}
+#twelvth > div:last-child {
+  width: 60%;
+  height: 50px;
+  margin-top: 25px;
+  font-size: 20px;
+}  #twelvth > div:first-child {
+    margin-top:25px ;
+}
+#last {
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  border: none;
+  background-color: rgb(212, 206, 206);
+}
+#fifth button {
+  color: rgb(82, 82, 230);
+  width: 130px;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+}
+#fifth button:hover {
+  background-color: rgb(75, 75, 219);
+  color: white;
+}
+#seventh > div:last-child input {
+  width: 85%;
+  height: 30px;
+  border: 0.5px solid gray;
+}
+#seventh > div:last-child p {
+  margin-bottom: 0px;
+}
+#seventh > div:last-child #btn {
+  width: 88%;
+  height: 45px;
+  background-color: rgb(42, 145, 230);
+  border-radius: 8px;
+  margin-top: 10px;
+  border: none;
+  font-size: 20px;
+  color: white;
+}
+.know {
+  color: blue;
+}
+.small {
+  font-size: 12px;
+}
+.large {
+  font-size: 18px;
+}
+.Elarge {
+  font-size: 30px;
+}
+#gray {
+  color: rgb(110, 108, 108);
+  font-size: 12px;
+}
+#eighth > div {
+  width: 86%;
+  height: 201px;
+  margin: auto;
+}
+#eighth img {
+  width: 100%;
+  height: 200px;
+  margin-top: 25px;
+  border-radius: 30px;
+}
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.395);
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 25px;
+}
+.next {
+  right: 100px;
+}
+.prev {
+  left: 100px;
+}
+.slide {
+  display: none;
+}
+#tdn {
+  text-decoration: none;
+  color: blue;
+}
+#notify{
+    width:18px;
+    height:18px;
+    border-radius: 50%;
+    background-color: brown;
+   text-align: center;
+   color:white;
+   margin-top: -8px;
+}
